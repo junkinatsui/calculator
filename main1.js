@@ -36,6 +36,9 @@ function get_calc(btn) {
 
       canAddDecimalPoint = false;
    }
+   else if (numReg.test(value) === false) {
+      canAddDecimalPoint = true;
+   }
 
    if (operatorReg.test(value) && operatorReg.test(preValue)) {
       return;
